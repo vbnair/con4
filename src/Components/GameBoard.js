@@ -25,14 +25,13 @@ const GameBoard = () =>{
 
     console.log(gameBoard);
 
-    useEffect(()=>{
-        initGame();
-    }, []);
+    useEffect(()=>{initGame();},[]);
 
     const initGame =() => {
         console.log("init Game");
         setGameBoard(Array(16).fill(NO_PLAYER));
         setcurrentPlayer(PLAYER_1);
+        setGameState(GAME_STATE_PLAYING);
     }
 
     // Circles 
@@ -79,7 +78,12 @@ const GameBoard = () =>{
     }
 
 const renderCircle = id =>{
-    return <GameCircle key={id} id={id} className={`player_${gameBoard[id]}`} onCircleClicked={circleClicked} />
+    return <GameCircle 
+    key={id} 
+    id={id} 
+    className={`player_${gameBoard[id]}`} 
+    onCircleClicked={circleClicked} 
+        />
 }
 
     return (
@@ -88,7 +92,7 @@ const renderCircle = id =>{
     <div className="gameBoard">{initBoard()}</div>   
     <Footer onClickEvent={initGame}/> 
         </>
-    )
-}
+    );
+};
 
 export default GameBoard;
