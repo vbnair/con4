@@ -1,5 +1,8 @@
 ### Connect4 using React
 * Find the deployed site on [Netlify](https://deluxe-bavarois-34ab78.netlify.app)
+<img src="Connect_4.png" width="450" height="360">
+
+
 
 # Getting Started with Create React App
 
