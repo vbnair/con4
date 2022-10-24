@@ -1,3 +1,6 @@
+### Connect4 using React
+* Find the deployed site on [Netlify](https://deluxe-bavarois-34ab78.netlify.app)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
